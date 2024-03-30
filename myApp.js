@@ -1,5 +1,12 @@
 const express = require('express');
+const helemt = require('helmet');
 const app = express();
+
+const PORT = process.env.PORT || 3030;
+
+app.listen(PORT, () => {
+  console.log('Info security App started on port ${PORT}');
+});
 
 
 
